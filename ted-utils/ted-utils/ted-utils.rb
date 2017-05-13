@@ -23,11 +23,11 @@ def self.set_aspect_from_view
 	end
 end
 
-end # module TedUtils
-
 if not defined? TedUtils::UI_LOADED
-menu = UI.menu('Plugins')
-ted_utils = menu.add_submenu("Ted Utils")
-ted_utils.add_item("Set aspect ratio from view"){ TedUtils.set_aspect_from_view }
-UI_LOADED=true
+	menu = UI.menu('Plugins')
+	ted_utils = menu.add_submenu("Ted Utils")
+	ted_utils.add_item("Set aspect ratio from view"){ TedUtils.set_aspect_from_view }
+	UI_LOADED=true
 end
+
+end # module TedUtils
